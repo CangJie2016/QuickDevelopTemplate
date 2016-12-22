@@ -1,6 +1,9 @@
 package ${packageName}.ui;
 
 import android.os.Bundle;
+import ${packageName}.ui.base.PresenterActivity;
+import ${packageName}.presenter.${presenterClass};
+import ${packageName}.presenter.view.${viewClass};
 
 public class ${activityClass} extends PresenterActivity<${presenterClass}> implements ${viewClass} {
     @Override

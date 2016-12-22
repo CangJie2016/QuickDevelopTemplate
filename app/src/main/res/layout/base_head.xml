@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- 公共头布局 -->
+    <include layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <!-- 页面主内容 -->
+            <RelativeLayout
+                android:id="@+id/rel_base_contentArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </RelativeLayout>
+        </RelativeLayout>
+		<!-- 页面加载时显示的等待动画 -->
+        <RelativeLayout
+            android:id="@+id/rel_base_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" >
+            <ProgressBar
+                style="@style/myProgressBarStyleLarge"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDuration="700"
+                android:background="@mipmap/pb_img"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
